@@ -6,13 +6,14 @@ import numpy as np
 from math import *
 from database import Database
 from geometry_msgs.msg import Twist
-
+from lane_follower import lane_detect
 
 class Omo():
     def __init__(self, hz = 10):
         self.rate = rospy.Rate(hz)
 
         self.db = Database()
+        self.ld = lane_detect()
         self.db.init(self.rate)
         self.speed = 0 #초기 속도 설정
 
@@ -39,9 +40,13 @@ class Omo():
 
         # 4. 현재 미션 받아오는 방법
         current_mission = self.db.current_mission 
-        print(current_mission)       
+        # print(current_mission)
 
-        # 5. 차량에 제어값을 보내는 방법
+        # 5. 차선주행
+        lane_angle = self.ld.steer
+        # print(lane_angle)
+
+        # 6. 차량에 제어값을 보내는 방법
         # self.pub_cmd(self.speed,0)
         
 

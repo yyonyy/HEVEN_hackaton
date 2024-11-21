@@ -25,9 +25,13 @@ roslaunch omo_r1mini_bringup omo_r1mini_robot.launch
 
 ## PC launch
 
+### map
+
 ```bash
 roslaunch omo_hackathon start.launch
 ```
+
+### 자율주행코드
 
 ```bash
 rosrun omo_hackathon omo.py

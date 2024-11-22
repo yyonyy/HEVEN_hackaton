@@ -7,6 +7,9 @@
 - 내용 : Robot, Simulation상에서의 자율주행 알고리즘 구현
 
 ## 로봇 launch
+```bash
+roslaunch omo_r1mini_bringup omo_r1mini_bringup.launch
+```
 
 ### 카메라
 
@@ -15,10 +18,6 @@ roslaunch jetson_camera jetson_camera.launch
 ```
 
 ### Lidar 및 모터
-- 로봇 기본
-```bash
-roslaunch omo_r1mini_bringup omo_r1mini_bringup.launch
-```
 
 -검은색 Lidar
 

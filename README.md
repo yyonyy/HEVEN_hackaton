@@ -15,6 +15,10 @@ roslaunch jetson_camera jetson_camera.launch
 ```
 
 ### Lidar 및 모터
+- 로봇 기본
+```bash
+roslaunch omo_r1mini_bringup omo_r1mini_bringup.launch
+```
 
 -검은색 Lidar
 

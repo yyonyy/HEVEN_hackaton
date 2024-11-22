@@ -6,7 +6,7 @@
 - 인원 : 약 30명 내외 (5~6인 1팀 구성)
 - 내용 : Robot, Simulation상에서의 자율주행 알고리즘 구현
 
-## 로봇 launch
+## 로봇 launch ( 파란색 라이다의 경우 실행하지 않아도 됨.)
 ```bash
 roslaunch omo_r1mini_bringup omo_r1mini_bringup.launch
 ```
@@ -25,7 +25,7 @@ roslaunch jetson_camera jetson_camera.launch
 roslaunch omo_r1mini_bringup omo_r1mini_robot_x4pro.launch
 ```
 
--파란색 Lidar
+-파란색 Lidar 
 
 ```bash
 roslaunch omo_r1mini_bringup omo_r1mini_robot.launch
